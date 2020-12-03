@@ -1,0 +1,19 @@
+This is a prototype for an Electronic Medical Record app.
+We will be creating a full-stack login/authorization app using
+the PERN stack (PostgreSQL for our database, Express and Node for
+our backend, and React for our frontened). We will be using JWT
+(JSON Web Token) for user authentication.
+
+Our app will allow users to register and log into our app, which
+will then run a query to retrieve the user's medical 
+chart from their primary hospital's database.
+
+
+
+Potential Challenges:
+Our databse solution works for small environments, but the problem 
+is the depreciation in performance from connecting retrieving, storing data 
+temporarily in memory. Closing that connection and going to the next hospital 
+for querying, etc. takes up a lot of resources and processing time. 
+Granted, two hospitals are not a real big deal with this model, but I retrievind 
+data at scale may prove difficult.
